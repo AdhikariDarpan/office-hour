@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://darpanadhikari.com.np/addition/images/logo.ico">
+    <title>Hour Counter || Darpan Adhikari</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="date" id="datePicker" onchange="addDateEntry(this.value)" style="max-width: 241px;" />
+      <select id="filterDate">
+        <option value="all">---Select Date---</option>
+      </select>
+      <div class="btn-group">
+        <button onclick="showRangeModal()">📅 Calculate Range</button>
+      </div>
+      <div id="dateContainer"></div>
+      <div class="summary" id="totalHours"></div>
+    </div>
+    <div class="modal" id="rangeModal">
+      <div class="modal-content">
+        <button onclick="closeRangeModal()" class="top-close">×</button>
+        <h3 id="modalTitle" class="modal-title"></h3>
+        <div id="modalBody"></div>
+      </div>
+    </div>   
+     <!-- Footer -->
+     <footer>
+      <span
+        ><i>&copy;</i><span id="date"></span
+        ><a href="https://darpanadhikari.com.np" target="_blank">
+          DarpanAdhikari</a
+        >
+        || All right reserved</span
+      >
+    </footer> 
+    <script src="assets/script.js"></script>
+  </body>
+</html>
