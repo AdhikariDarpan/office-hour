@@ -9,9 +9,11 @@
   </head>
   <body>
     <div class="container">
-      <input type="date" id="datePicker" onchange="addDateEntry(this.value)" style="max-width: 241px;" />
+      <label for="date">Choose Date: <br>
+        <input type="date" id="datePicker" onchange="addDateEntry(this.value)" style="max-width: 241px;" />
+      </label>
       <select id="filterDate">
-        <option value="all">---Select Date---</option>
+        <option value="all">---Filter By Date---</option>
       </select>
       <div class="btn-group">
         <button onclick="showRangeModal()">📅 Calculate Range</button>
